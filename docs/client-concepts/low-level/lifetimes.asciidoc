@@ -24,7 +24,7 @@ so sharing an instance across threads is fine.
 The actual moving part that benefits from being a singleton is `ConnectionSettings` because
 **caches are __per__ `ConnectionSettings`**.
 
-In some applications ,it could make perfect sense to have multiple `ElasticClient` instances registered with different
+In some applications, it could make perfect sense to have multiple `ElasticClient` instances registered with different
 connection settings such as when your application connects to two different Elasticsearch clusters.
 
 IMPORTANT: Due to the semantic versioning of Elasticsearch.Net and NEST and their alignment to versions of Elasticsearch, all instances of `ElasticClient` and
